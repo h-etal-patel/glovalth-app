@@ -58,6 +58,12 @@ export default function DocumentManagement() {
                                     <button className="btn btn-success">⬇️ Download</button>
                                 </li>
                             </ul>
+                            <button className="btn btn-success flex items-center mt-2">
+                                View all<span className="ml-2"></span>
+                            </button>
+                            <button className="btn btn-outline ml-2 flex items-center mt-2">
+                                ✏️ Edit
+                            </button>
                         </div>
                     )}
                 </div>
@@ -93,17 +99,14 @@ export default function DocumentManagement() {
                             <ul className="mt-2 space-y-2">
                                 <li className="flex justify-between bg-white p-2 rounded shadow">
                                     Bill 1
-                                    <label>Date</label>
                                     <input className="btn btn-success" id="date" type="date" name="date" />
                                 </li>
                                 <li className="flex justify-between bg-white p-2 rounded shadow">
                                     Bill 2
-                                    <label>Date</label>
                                     <input className="btn btn-success" id="date" type="date" name="date" />
                                 </li>
                                 <li className="flex justify-between bg-white p-2 rounded shadow">
                                     Bill 3
-                                    <label>Date</label>
                                     <input className="btn btn-success" id="date" type="date" name="date" />
                                 </li>
                             </ul>
@@ -122,6 +125,7 @@ export default function DocumentManagement() {
                 </div>
 
             </div>
+            <br/>
             <button className="btn btn-success bg-green-200">
             <Link href="/">Home</Link>
             </button>
