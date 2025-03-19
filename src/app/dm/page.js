@@ -2,7 +2,7 @@ export default function careerPage(){
 return(
     <>
     <h1>Document</h1>
-    <form> 
+    <form action> 
         <label>Name </label>
         <input
         type="text"
