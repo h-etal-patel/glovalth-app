@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
-export default function idEdit() {
+
+export default function IdEdit() {
   const [files, setFiles] = useState([]);
 
   // Allow file drop
@@ -132,7 +133,7 @@ export default function idEdit() {
       </div>
       <div className="flex justify-end mt-6">
         <button
-          className="py-2 px-6 bg-green-500 text-white rounded-md hover:bg-green-700"
+          className="py-2 px-6 mb-6 mr-6 bg-green-500 text-white rounded-md hover:bg-green-700"
           onClick={() => alert('Files uploaded successfully!')}
         >
           Upload Files

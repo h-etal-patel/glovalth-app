@@ -116,8 +116,7 @@ export default function DocumentManagement() {
                                     Download <span className="ml-2">⬇️</span>
                                 </button>
                                 <button className="btn btn-outline ml-2 flex items-center">
-                                    <Link href=""> ✏️ Edit</Link>
-                                   
+                                    <Link href="">View all <span className="ml-2">👁️</span></Link>
                                 </button>
                             </div>
                         </div>
