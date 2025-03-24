@@ -10,7 +10,7 @@ export default function DocumentManagement() {
     };
 
     return (
-        <div className="bg-green-100 p-4">
+        <div className="bg-green-100 p-4 mt-15 rounded-lg shadow-lg">
             <div className="bg-green-300 p-4 rounded-lg shadow-lg">
                 {/* ID Document Section */}
                 <div className="bg-green-200 mt-4 p-3 rounded-md cursor-pointer" onClick={() => toggleSection("Id Document")}>
@@ -58,12 +58,14 @@ export default function DocumentManagement() {
                                     <button className="btn btn-success">⬇️ Download</button>
                                 </li>
                             </ul>
+                            <div className="flex items-center mt-3">
                             <button className="btn btn-success flex items-center mt-2">
                                 View all<span className="ml-2"></span>
                             </button>
                             <button className="btn btn-outline ml-2 flex items-center mt-2">
-                                ✏️ Edit
+                               <Link href='medicalEdit'> ✏️ Edit</Link>
                             </button>
+                            </div>
                         </div>
                     )}
                 </div>
@@ -77,12 +79,14 @@ export default function DocumentManagement() {
                     {openSection === "Insurance related docs" && (
                         <div className="mt-3 p-3 bg-green-100 rounded-md text-center">
                             <p className="text-pink-600 font-bold text-lg">Insurance Docs.</p>
+                           <div className="flex items-center mt-3">
                             <button className="btn btn-success flex items-center mt-2">
                                 Download <span className="ml-2">⬇️</span>
                             </button>
                             <button className="btn btn-outline ml-2 flex items-center mt-2">
-                                ✏️ Edit
+                               <Link href='insurance'>✏️ Edit</Link> 
                             </button>
+                            </div>
                         </div>
                     )}
                 </div>
