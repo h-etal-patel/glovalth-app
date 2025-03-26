@@ -20,7 +20,8 @@ export default function DocumentManagement() {
                     </div>
                     {openSection === "Id Document" && (
                         <div className="mt-3 p-3 bg-green-100 rounded-md">
-                            <p><strong>Name:</strong> Jon Gial</p>
+                            
+                            <p><strong>Name:</strong>Joe Patil</p>
                             <p><strong>Document Number:</strong> 023454349</p>
                             <p><strong>Valid Until:</strong> 06/07/2030</p>
                             <div className="flex items-center mt-3">
@@ -32,6 +33,7 @@ export default function DocumentManagement() {
                                 </button>
                             </div>
                         </div>
+                        
                     )}
                 </div>
 
@@ -132,6 +134,7 @@ export default function DocumentManagement() {
             <button className="btn btn-success bg-green-200">
             <Link href="/">Home</Link>
             </button>
+            
         </div>
     );
 }
